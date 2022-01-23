@@ -1,6 +1,7 @@
 import Decimal from "break_infinity.js";
 import type { DecimalSource } from "break_infinity.js";
 import { Notation } from "../notation";
+import { Settings } from "../settings";
 import { fixMantissaOverflow } from "../utils";
 
 export abstract class AbstractInfixNotation extends Notation {
@@ -24,6 +25,11 @@ export abstract class AbstractInfixNotation extends Notation {
     }
 
     const decimal = Decimal.fromValue_noAlloc(value);
+    
+
+    if (Settings.isInfinite(decimal.abs())) {
+      return decimal.sign() < 0 ? this.negativeInfinite : this.infinite;
+    }
 
     return decimal.sign() < 0
       ? this.formatNegativeDecimal(
@@ -43,6 +49,9 @@ export abstract class AbstractInfixNotation extends Notation {
   protected formatInfix(inputValue: Decimal, inputPlaces: number): string {
     // Stop numbers starting with a lot of 9s from having those 9s rounded up,
     // by potentially adding 1 to the exponent.
+    // This function is old and may be broken but TBH I don't care too much
+    // about maintaining the infix notations right now, possibly at some point
+    // this should be updated to the general sci handling method.
     const value = fixMantissaOverflow(
       inputValue,
       this.numberOfPlaces(
