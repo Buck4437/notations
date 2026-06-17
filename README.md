@@ -207,6 +207,6 @@ Thanks to the authors of community notations:
 - Infix standard: [Ivan Sanchez](https://github.com/IvanSanchez)
 - Infix long scale: [Ivan Sanchez](https://github.com/IvanSanchez)
 - English: [ducdat0507](https://github.com/ducdat0507)
-- Blobs (Text), Blobs (Short text): [Buck](https://github.com/Buck4437)
+- Fours, Blobs (Text), Blobs (Short text): [Buck](https://github.com/Buck4437)
 
 Additional thanks to [Omsi](https://github.com/omsi6) for the scaffolding of docs page.
