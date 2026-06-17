@@ -180,6 +180,7 @@ Special thanks to the authors of notations:
 - Prime: [Iker](https://github.com/Ikerstreamer)
 - Bar: [Earth](https://github.com/earthernsence)
 - Shi: [dan-simon](https://github.com/dan-simon)
+- Blobs: [Buck](https://github.com/Buck4437), font by [Hira](https://github.com/Hirame1)
 - Blind: [Earth](https://github.com/earthernsence)
 - ALL: [SpectralFlame](https://github.com/cyip92)
 
@@ -205,6 +206,7 @@ Thanks to the authors of community notations:
 - Reverse infix engineering: [Ivan Sanchez](https://github.com/IvanSanchez)
 - Infix standard: [Ivan Sanchez](https://github.com/IvanSanchez)
 - Infix long scale: [Ivan Sanchez](https://github.com/IvanSanchez)
-- English: [ducdat0507 ](https://github.com/ducdat0507)
+- English: [ducdat0507](https://github.com/ducdat0507)
+- Blobs (Text), Blobs (Short text): [Buck](https://github.com/Buck4437)
 
 Additional thanks to [Omsi](https://github.com/omsi6) for the scaffolding of docs page.
